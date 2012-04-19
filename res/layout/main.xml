@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.maps.MapView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/mapview"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:clickable="true"
-    android:apiKey="0IhASsgkt8rRVC7sB9z9f9TA4Eot9s62AJp7qNg"
-/>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<com.google.android.maps.MapView
+	    android:id="@+id/mapview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:clickable="true"
+	    android:apiKey="GOOGLE-MAPS-KEY"
+	/>
+
+	<LinearLayout
+	    android:id="@+id/rlObjectInfo"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#BB000000"
+	    android:orientation="horizontal"
+	    android:visibility="visible" >
+	    
+    
+	    <Button
+	      android:id="@+id/recent"
+	      android:textSize="20dip" 
+          android:text="Recent"
+          android:gravity="center"
+          android:layout_width="wrap_content"
+          android:layout_height="fill_parent"
+          android:layout_weight="1"/>
+      <Button
+          android:id="@+id/best"
+          android:text="Liked"
+          android:textSize="20dip"
+          android:gravity="center"
+          android:layout_width="wrap_content"
+          android:layout_height="fill_parent"
+          android:layout_weight="1"/>
+	
+	</LinearLayout>
+</RelativeLayout>
+

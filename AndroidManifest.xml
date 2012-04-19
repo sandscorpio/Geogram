@@ -20,6 +20,30 @@
             </intent-filter>
         </activity>
         
+        <activity
+            android:name=".InstaPic"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+		      android:name="com.dropbox.client2.android.AuthActivity"
+		      android:launchMode="singleTask"
+		      android:configChanges="orientation|keyboard">
+		      <intent-filter>
+		        <!-- Change this to be db- followed by your app key -->
+		        <data android:scheme="db-DROPBOX-KEY" />
+		        <action android:name="android.intent.action.VIEW" />
+		        <category android:name="android.intent.category.BROWSABLE"/>
+		        <category android:name="android.intent.category.DEFAULT" />
+		      </intent-filter>
+    	</activity>
+        
         <uses-library android:name="com.google.android.maps" />
         
     </application>
