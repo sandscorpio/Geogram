@@ -1,0 +1,9 @@
+An Instagram-Google Maps mashup : a Big Hack 2012 project
+
+App Description:
+A Map is displayed centered on user's current location. Pictures uploaded nearby (geotagged with a nearby location and uploaded on Instagram) are then displayed.
+
+Dropbox API is used to store the picture if user wishes to download a photo.
+
+Note:
+All API keys/secrets/tokens have been removed. Contact admin if desired.
